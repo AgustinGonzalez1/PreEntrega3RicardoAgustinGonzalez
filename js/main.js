@@ -3,11 +3,11 @@ function renderProductos() {
 	let salida = "";
 	for (producto of productos) {
 		salida += `      <div class="producto">
-    <img src="${"img/" + producto.imagen}" alt="">
+    <img src="${"img/" + producto.imagen}" alt="${producto.nombre}">
     <div class="detalles">
-      <h3 class="producto-titulo">TITULO</h3>
-      <p class="producto-precio">$500</p>
-      <button class="producto-agregar">Agregar</button>
+      <h3 class="producto-titulo">${producto.nombre}</h3>
+      <p class="producto-precio">$${producto.precio}</p>
+      <button class="producto-agregar" id="boton-agregar">Agregar</button>
     </div>
   </div>`;
 	}
