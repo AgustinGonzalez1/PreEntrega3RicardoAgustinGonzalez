@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Rubik", sans-serif;
+}
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+/* root */
+:root {
+	--clr-main: #632763;
+	--clr-light: #9a309a;
+	--clr-pink: #ffdefc;
+	--clr-dark: #511f52;
+}
+/* root */
+
+.body-tienda {
+	display: grid;
+	grid-template-columns: 350px repeat(3, 1fr);
+	grid-template-rows: 80px auto auto 80px;
+	grid-template-areas:
+		"nav    nav    nav    nav"
+		"aside  main   main   main"
+		"aside  main   main   main"
+		"footer footer footer footer";
+	background-color: var(--clr-pink);
+}
+/* navbar */
+.navbar {
+	grid-area: nav;
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--clr-main);
+}
+.navbar > .div-icon {
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 15px;
+}
+
+.navbar > .div-icon > a > img {
+	width: 100%;
+}
+
+.navbar > .div-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar > .div-list > ul {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+
+.navbar > .div-list > ul > li > a {
+	color: white;
+	font-weight: bold;
+	display: block;
+	position: relative;
+	transition: color 0.3s;
+}
+
+.navbar > .div-list > ul > li > a::after {
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 3px;
+	bottom: -5px;
+	background-color: #fff;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: width 0.3s;
+	border-radius: 5px;
+}
+
+.navbar > .div-list > ul > li > .seleccionado::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 3px;
+	bottom: -5px;
+	background-color: #fff;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: width 0.3s;
+	border-radius: 5px;
+}
+
+.navbar > .div-list > ul > li > a:hover::after {
+	width: 100%;
+}
+
+.navbar > .div-carrito {
+	width: 50px;
+	margin-right: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.navbar > .div-carrito > a > i {
+	color: white;
+	font-size: 25px;
+}
+
+.navbar > .div-carrito > .contenedor-contador {
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	right: 0px;
+	top: 17px;
+	background-color: var(--clr-dark);
+	border-radius: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar > .div-carrito > .contenedor-contador > span {
+	font-size: 12px;
+}
+
+/* navbar */
+
+/* aside */
+.aside-tienda {
+	grid-area: aside;
+	display: flex;
+	background-color: var(--clr-light);
+	height: 100%;
+}
+
+.aside-tienda > .div-botones {
+	height: calc(100% - 150px);
+	width: 350px;
+	display: flex;
+	align-items: start;
+	margin-top: 150px;
+}
+
+.aside-tienda > .div-botones > ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+	width: 100%;
+	padding: 0px 0px 0px 15px;
+	position: sticky;
+	top: 230px;
+}
+
+.boton {
+	width: 100%;
+	height: 40px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px 0px 0px 5px;
+	z-index: 1;
+}
+.active {
+	background-color: var(--clr-pink);
+	color: var(--clr-dark);
+}
+/* aside */
+
+/* main */
+.main-tienda {
+	grid-area: main;
+	color: var(--clr-dark);
+	text-align: center;
+	padding: 5px;
+	z-index: 10;
+}
+
+.main-tienda > .contenedor-carrito {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.main-tienda > .contenedor-carrito > .producto {
+	width: 250px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.main-tienda > .contenedor-carrito > .producto > img {
+	width: 100%;
+}
+
+.main-tienda > .contenedor-carrito > .producto > .detalles {
+	background-color: var(--clr-dark);
+	margin-top: -5px;
+	color: white;
+	padding: 5px 5px 0px 5px;
+}
+
+.main-tienda > .contenedor-carrito > .producto > .detalles > .producto-agregar {
+	margin: 5px;
+	cursor: pointer;
+	height: 25px;
+	width: 100px;
+}
+/* main */
