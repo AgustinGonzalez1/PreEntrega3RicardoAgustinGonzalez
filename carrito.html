@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="./assets/img/sun.png" type="image/x-icon">
+  <title>El Clima</title>
+</head>
+
+<body class="body-carrito">
+  <nav class="navbar">
+    <div class="div-icon">
+      <a href="index.html"><img src="./assets/img/sun.png" alt="sun"></a>
+    </div>
+    <div class="div-list">
+      <ul>
+        <li><a href="./index.html">TIENDA</a></li>
+        <li><a href="">CLIMA</a></li>
+      </ul>
+    </div>
+    <div class="div-carrito">
+      <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+  </nav>
+  <main class="main-carrito">
+    <h2 id="titulo-principal-carrito">CARRITO</h2>
+    <div class="contenedor-carrito">
+      <p id="carrito-vacio">Carrito vacío</p>
+      <div id="carrito-productos" class="carrito-productos displayNone">
+        <!-- js -->
+      </div>
+      <div id="carrito-acciones" class="carrito-borrar-comprar displayNone">
+        <div class="carrito-borrar">
+          <button id="vaciar-carrito">VACIAR CARRITO</button>
+        </div>
+        <div class="carrito-comprar">
+          <div class="total">
+            <p>Total:</p>
+            <p id="total">
+
+            </p>
+          </div>
+          <button id="comprar-carrito" class="carrito-boton-comprar">COMPRAR</button>
+        </div>
+      </div>
+
+      <p id="carrito-comprado" class="carrito-comprado displayNone">Muchas gracias por tu compra. <i
+          class="bi bi-emoji-laughing"></i></p>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="./js/carrito.js"></script>
+</body>
+
+</html>
