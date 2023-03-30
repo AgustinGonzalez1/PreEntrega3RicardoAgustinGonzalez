@@ -3,7 +3,7 @@ const productos = [
 		id: 1,
 		titulo: "Campera acolchada",
 		precio: 5000,
-		imagen: "a1.jpg",
+		imagen: "../assets/img/a1.jpg",
 		seccion: {
 			nombre: "Camperas",
 		},
@@ -12,7 +12,7 @@ const productos = [
 		id: 2,
 		titulo: "Chaqueta",
 		precio: 3000,
-		imagen: "a2.jpg",
+		imagen: "../assets/img/a2.jpg",
 		seccion: {
 			nombre: "Camperas",
 			id: "camperas",
@@ -22,7 +22,7 @@ const productos = [
 		id: 3,
 		titulo: "Chaqueta abrigada",
 		precio: 4000,
-		imagen: "a3.jpg",
+		imagen: "../assets/img/a3.jpg",
 		seccion: {
 			nombre: "Camperas",
 			id: "camperas",
@@ -32,7 +32,7 @@ const productos = [
 		id: 4,
 		titulo: "Campera de abrigo",
 		precio: 6000,
-		imagen: "a4.jpg",
+		imagen: "../assets/img/a4.jpg",
 		seccion: {
 			nombre: "Camperas",
 			id: "camperas",
@@ -42,7 +42,7 @@ const productos = [
 		id: 5,
 		titulo: "Campera deportiva",
 		precio: 2500,
-		imagen: "a5.jpg",
+		imagen: "../assets/img/a5.jpg",
 		seccion: {
 			nombre: "Camperas",
 			id: "camperas",
@@ -52,7 +52,7 @@ const productos = [
 		id: 6,
 		titulo: "Pantalón beige",
 		precio: 2700,
-		imagen: "p1.jpg",
+		imagen: "../assets/img/p1.jpg",
 		seccion: {
 			nombre: "Pantalones",
 			id: "pantalones",
@@ -62,7 +62,7 @@ const productos = [
 		id: 7,
 		titulo: "Pantalón blanco",
 		precio: 2500,
-		imagen: "p2.jpg",
+		imagen: "../assets/img/p2.jpg",
 		seccion: {
 			nombre: "Pantalones",
 			id: "pantalones",
@@ -72,7 +72,7 @@ const productos = [
 		id: 8,
 		titulo: "Pantalón negro",
 		precio: 2500,
-		imagen: "p3.jpg",
+		imagen: "../assets/img/p3.jpg",
 		seccion: {
 			nombre: "Pantalones",
 			id: "pantalones",
@@ -82,7 +82,7 @@ const productos = [
 		id: 9,
 		titulo: "Jean negro",
 		precio: 3200,
-		imagen: "p4.jpg",
+		imagen: "../assets/img/p4.jpg",
 		seccion: {
 			nombre: "Pantalones",
 			id: "pantalones",
@@ -92,7 +92,7 @@ const productos = [
 		id: 10,
 		titulo: "Pantalón de vestir",
 		precio: 3500,
-		imagen: "p5.jpg",
+		imagen: "../assets/img/p5.jpg",
 		seccion: {
 			nombre: "Pantalones",
 			id: "pantalones",
@@ -102,7 +102,7 @@ const productos = [
 		id: 11,
 		titulo: "Remera azul",
 		precio: 2000,
-		imagen: "r1.jpg",
+		imagen: "../assets/img/r1.jpg",
 		seccion: {
 			nombre: "Remeras",
 			id: "remeras",
@@ -112,7 +112,7 @@ const productos = [
 		id: 12,
 		titulo: "Remera TROPIC blanca",
 		precio: 2700,
-		imagen: "r2.jpg",
+		imagen: "../assets/img/r2.jpg",
 		seccion: {
 			nombre: "Remeras",
 			id: "remeras",
@@ -122,7 +122,7 @@ const productos = [
 		id: 13,
 		titulo: "Remera GROUND blanc",
 		precio: 2700,
-		imagen: "r3.jpg",
+		imagen: "../assets/img/r3.jpg",
 		seccion: {
 			nombre: "Remeras",
 			id: "remeras",
@@ -132,7 +132,7 @@ const productos = [
 		id: 14,
 		titulo: "Remera roja",
 		precio: 2000,
-		imagen: "r4.jpg",
+		imagen: "../assets/img/r4.jpg",
 		seccion: {
 			nombre: "Remeras",
 			id: "remeras",
@@ -142,7 +142,7 @@ const productos = [
 		id: 15,
 		titulo: "Remera marron",
 		precio: 2000,
-		imagen: "r5.jpg",
+		imagen: "../assets/img/r5.jpg",
 		seccion: {
 			nombre: "Remeras",
 			id: "remeras",
@@ -152,7 +152,7 @@ const productos = [
 		id: 16,
 		titulo: "Remera roja",
 		precio: 2000,
-		imagen: "r6.jpg",
+		imagen: "../assets/img/r6.jpg",
 		seccion: {
 			nombre: "Remeras",
 			id: "remeras",
@@ -162,7 +162,7 @@ const productos = [
 		id: 17,
 		titulo: "Remera azul",
 		precio: 2000,
-		imagen: "r7.jpg",
+		imagen: "../assets/img/r7.jpg",
 		seccion: {
 			nombre: "Remeras",
 			id: "remeras",
@@ -172,7 +172,7 @@ const productos = [
 		id: 18,
 		titulo: "Remera celeste",
 		precio: 2000,
-		imagen: "r8.jpg",
+		imagen: "../assets/img/r8.jpg",
 		seccion: {
 			nombre: "Remeras",
 			id: "remeras",
@@ -182,7 +182,7 @@ const productos = [
 		id: 19,
 		titulo: "Short hojas",
 		precio: 2400,
-		imagen: "s1.jpg",
+		imagen: "../assets/img/s1.jpg",
 		seccion: {
 			nombre: "Shorts",
 			id: "shorts",
@@ -192,7 +192,7 @@ const productos = [
 		id: 20,
 		titulo: "Short flores",
 		precio: 2500,
-		imagen: "s2.jpg",
+		imagen: "../assets/img/s2.jpg",
 		seccion: {
 			nombre: "Shorts",
 			id: "shorts",
@@ -202,7 +202,7 @@ const productos = [
 		id: 21,
 		titulo: "Short palmeras",
 		precio: 2800,
-		imagen: "s3.jpg",
+		imagen: "../assets/img/s3.jpg",
 		seccion: {
 			nombre: "Shorts",
 			id: "shorts",
@@ -212,7 +212,7 @@ const productos = [
 		id: 22,
 		titulo: "Short plantas",
 		precio: 2500,
-		imagen: "s4.jpg",
+		imagen: "../assets/img/s4.jpg",
 		seccion: {
 			nombre: "Shorts",
 			id: "shorts",
@@ -222,7 +222,7 @@ const productos = [
 		id: 23,
 		titulo: "Short florecer azul",
 		precio: 2200,
-		imagen: "s5.jpg",
+		imagen: "../assets/img/s5.jpg",
 		seccion: {
 			nombre: "Shorts",
 			id: "shorts",
@@ -232,7 +232,7 @@ const productos = [
 		id: 24,
 		titulo: "Short florecer rojo",
 		precio: 2200,
-		imagen: "s6.jpg",
+		imagen: "../assets/img/s6.jpg",
 		seccion: {
 			nombre: "Shorts",
 			id: "shorts",
@@ -242,7 +242,7 @@ const productos = [
 		id: 25,
 		titulo: "Short tucán",
 		precio: 2900,
-		imagen: "s7.jpg",
+		imagen: "../assets/img/s7.jpg",
 		seccion: {
 			nombre: "Shorts",
 			id: "shorts",
@@ -263,7 +263,7 @@ function cargarProductos(productosElegidos) {
 		const div = document.createElement("div");
 		div.classList.add("producto");
 		div.innerHTML = `
-            <img class="producto-imagen" src="${"../assets/img/" + producto.imagen}" alt="${producto.titulo}">
+            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
             <div class="detalles">
                 <h3 class="producto-titulo">${producto.titulo}</h3>
                 <p class="producto-precio">$${producto.precio}</p>
