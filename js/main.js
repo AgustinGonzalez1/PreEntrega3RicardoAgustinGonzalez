@@ -2,8 +2,8 @@ const productos = [
 	//camperas
 	{
 		id: 1,
-		titulo: "Campera acolchada",
-		precio: 5000,
+		titulo: "Campera corderito",
+		precio: 10000,
 		imagen: "./assets/img/a1.jpg",
 		seccion: {
 			nombre: "Camperas",
@@ -11,8 +11,8 @@ const productos = [
 	},
 	{
 		id: 2,
-		titulo: "Chaqueta",
-		precio: 3000,
+		titulo: "Campera acolchada",
+		precio: 8000,
 		imagen: "./assets/img/a2.jpg",
 		seccion: {
 			nombre: "Camperas",
@@ -21,8 +21,8 @@ const productos = [
 	},
 	{
 		id: 3,
-		titulo: "Chaqueta abrigada",
-		precio: 4000,
+		titulo: "Chaqueta",
+		precio: 6000,
 		imagen: "./assets/img/a3.jpg",
 		seccion: {
 			nombre: "Camperas",
@@ -31,8 +31,8 @@ const productos = [
 	},
 	{
 		id: 4,
-		titulo: "Campera de abrigo",
-		precio: 6000,
+		titulo: "Campera TNF",
+		precio: 14000,
 		imagen: "./assets/img/a4.jpg",
 		seccion: {
 			nombre: "Camperas",
@@ -41,9 +41,79 @@ const productos = [
 	},
 	{
 		id: 5,
-		titulo: "Campera deportiva",
-		precio: 2500,
+		titulo: "Campera PUMA",
+		precio: 11000,
 		imagen: "./assets/img/a5.jpg",
+		seccion: {
+			nombre: "Camperas",
+			id: "camperas",
+		},
+	},
+	{
+		id: 6,
+		titulo: "Campera ZARA",
+		precio: 12000,
+		imagen: "./assets/img/a6.jpg",
+		seccion: {
+			nombre: "Camperas",
+			id: "camperas",
+		},
+	},
+	{
+		id: 7,
+		titulo: "Campera ADIDAS",
+		precio: 9000,
+		imagen: "./assets/img/a7.jpg",
+		seccion: {
+			nombre: "Camperas",
+			id: "camperas",
+		},
+	},
+	{
+		id: 8,
+		titulo: "Campera ADIDAS",
+		precio: 11000,
+		imagen: "./assets/img/a8.jpg",
+		seccion: {
+			nombre: "Camperas",
+			id: "camperas",
+		},
+	},
+	{
+		id: 9,
+		titulo: "Campera tricolor",
+		precio: 7000,
+		imagen: "./assets/img/a9.jpg",
+		seccion: {
+			nombre: "Camperas",
+			id: "camperas",
+		},
+	},
+	{
+		id: 10,
+		titulo: "Camperon invierno",
+		precio: 13000,
+		imagen: "./assets/img/a10.jpg",
+		seccion: {
+			nombre: "Camperas",
+			id: "camperas",
+		},
+	},
+	{
+		id: 11,
+		titulo: "Campera rompe viento",
+		precio: 6000,
+		imagen: "./assets/img/a11.jpg",
+		seccion: {
+			nombre: "Camperas",
+			id: "camperas",
+		},
+	},
+	{
+		id: 12,
+		titulo: "Camperita",
+		precio: 6000,
+		imagen: "./assets/img/a12.jpg",
 		seccion: {
 			nombre: "Camperas",
 			id: "camperas",
@@ -135,6 +205,16 @@ const productos = [
 		titulo: "Pantalón NIKE",
 		precio: 3800,
 		imagen: "./assets/img/p9.jpg",
+		seccion: {
+			nombre: "Pantalones",
+			id: "pantalones",
+		},
+	},
+	{
+		id: 30,
+		titulo: "Pantalón NIKE",
+		precio: 3800,
+		imagen: "./assets/img/p10.jpg",
 		seccion: {
 			nombre: "Pantalones",
 			id: "pantalones",
@@ -281,6 +361,16 @@ const productos = [
 			id: "remeras",
 		},
 	},
+	{
+		id: 55,
+		titulo: "Remera ancla",
+		precio: 2100,
+		imagen: "./assets/img/r15.jpg",
+		seccion: {
+			nombre: "Remeras",
+			id: "remeras",
+		},
+	},
 	//shorts
 	{
 		id: 61,
@@ -347,6 +437,56 @@ const productos = [
 		titulo: "Short tucán",
 		precio: 2900,
 		imagen: "./assets/img/s7.jpg",
+		seccion: {
+			nombre: "Shorts",
+			id: "shorts",
+		},
+	},
+	{
+		id: 68,
+		titulo: "Short tropic",
+		precio: 2500,
+		imagen: "./assets/img/s8.jpg",
+		seccion: {
+			nombre: "Shorts",
+			id: "shorts",
+		},
+	},
+	{
+		id: 69,
+		titulo: "Short marron",
+		precio: 2300,
+		imagen: "./assets/img/s9.jpg",
+		seccion: {
+			nombre: "Shorts",
+			id: "shorts",
+		},
+	},
+	{
+		id: 70,
+		titulo: "Short RUSTYK azul",
+		precio: 3400,
+		imagen: "./assets/img/s10.jpg",
+		seccion: {
+			nombre: "Shorts",
+			id: "shorts",
+		},
+	},
+	{
+		id: 71,
+		titulo: "Short RUSTYK negro",
+		precio: 3500,
+		imagen: "./assets/img/s11.jpg",
+		seccion: {
+			nombre: "Shorts",
+			id: "shorts",
+		},
+	},
+	{
+		id: 72,
+		titulo: "Short marmol",
+		precio: 3000,
+		imagen: "./assets/img/s12.jpg",
 		seccion: {
 			nombre: "Shorts",
 			id: "shorts",
