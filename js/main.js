@@ -143,7 +143,7 @@ const productos = [
 	//remeras
 	{
 		id: 41,
-		titulo: "Remera azul",
+		titulo: "Remera tropical",
 		precio: 2000,
 		imagen: "./assets/img/r1.jpg",
 		seccion: {
@@ -153,7 +153,7 @@ const productos = [
 	},
 	{
 		id: 42,
-		titulo: "Remera TROPIC blanca",
+		titulo: "Remera SVNTH",
 		precio: 2700,
 		imagen: "./assets/img/r2.jpg",
 		seccion: {
@@ -163,8 +163,8 @@ const productos = [
 	},
 	{
 		id: 43,
-		titulo: "Remera GROUND blanc",
-		precio: 2700,
+		titulo: "Remera VERSACE",
+		precio: 3700,
 		imagen: "./assets/img/r3.jpg",
 		seccion: {
 			nombre: "Remeras",
@@ -173,8 +173,8 @@ const productos = [
 	},
 	{
 		id: 44,
-		titulo: "Remera roja",
-		precio: 2000,
+		titulo: "Remera NIKE x NARUTO",
+		precio: 2900,
 		imagen: "./assets/img/r4.jpg",
 		seccion: {
 			nombre: "Remeras",
@@ -183,7 +183,7 @@ const productos = [
 	},
 	{
 		id: 45,
-		titulo: "Remera marron",
+		titulo: "Remera esqueleto",
 		precio: 2000,
 		imagen: "./assets/img/r5.jpg",
 		seccion: {
@@ -193,8 +193,8 @@ const productos = [
 	},
 	{
 		id: 46,
-		titulo: "Remera roja",
-		precio: 2000,
+		titulo: "Remera WHAT?",
+		precio: 2300,
 		imagen: "./assets/img/r6.jpg",
 		seccion: {
 			nombre: "Remeras",
@@ -203,8 +203,8 @@ const productos = [
 	},
 	{
 		id: 47,
-		titulo: "Remera azul",
-		precio: 2000,
+		titulo: "Remera NARUTO",
+		precio: 2500,
 		imagen: "./assets/img/r7.jpg",
 		seccion: {
 			nombre: "Remeras",
@@ -213,9 +213,69 @@ const productos = [
 	},
 	{
 		id: 48,
-		titulo: "Remera celeste",
-		precio: 2000,
+		titulo: "Remera JAPON",
+		precio: 2500,
 		imagen: "./assets/img/r8.jpg",
+		seccion: {
+			nombre: "Remeras",
+			id: "remeras",
+		},
+	},
+	{
+		id: 49,
+		titulo: "Remera tricolor",
+		precio: 2500,
+		imagen: "./assets/img/r9.jpg",
+		seccion: {
+			nombre: "Remeras",
+			id: "remeras",
+		},
+	},
+	{
+		id: 50,
+		titulo: "Remera poker",
+		precio: 2500,
+		imagen: "./assets/img/r10.jpg",
+		seccion: {
+			nombre: "Remeras",
+			id: "remeras",
+		},
+	},
+	{
+		id: 51,
+		titulo: "Remera NIKE lisa",
+		precio: 2600,
+		imagen: "./assets/img/r11.jpg",
+		seccion: {
+			nombre: "Remeras",
+			id: "remeras",
+		},
+	},
+	{
+		id: 52,
+		titulo: "Remera CALIFORNIA",
+		precio: 2600,
+		imagen: "./assets/img/r12.jpg",
+		seccion: {
+			nombre: "Remeras",
+			id: "remeras",
+		},
+	},
+	{
+		id: 53,
+		titulo: "Remera SUNSHINE",
+		precio: 2400,
+		imagen: "./assets/img/r13.jpg",
+		seccion: {
+			nombre: "Remeras",
+			id: "remeras",
+		},
+	},
+	{
+		id: 54,
+		titulo: "Remera X",
+		precio: 2100,
+		imagen: "./assets/img/r14.jpg",
 		seccion: {
 			nombre: "Remeras",
 			id: "remeras",

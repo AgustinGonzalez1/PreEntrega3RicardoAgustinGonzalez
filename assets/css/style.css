@@ -264,7 +264,7 @@ a {
 }
 
 .main-carrito > .contenedor-carrito > #carrito-vacio {
-	color: var(--clr-light);
+	color: var(--clr-dark);
 	margin: 20px 0px;
 	text-align: center;
 }
@@ -312,7 +312,7 @@ a {
 }
 
 .carrito-producto-eliminar:hover {
-	background-color: #959dff;
+	background-color: var(--clr-pink);
 	color: var(--clr-dark);
 }
 
@@ -348,7 +348,7 @@ a {
 
 #carrito-comprado {
 	text-align: center;
-	color: var(--clr-light);
+	color: var(--clr-dark);
 	font-weight: bold;
 }
 
