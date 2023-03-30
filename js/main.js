@@ -1,4 +1,5 @@
 const productos = [
+	//camperas
 	{
 		id: 1,
 		titulo: "Campera acolchada",
@@ -48,9 +49,10 @@ const productos = [
 			id: "camperas",
 		},
 	},
+	//pantalones
 	{
-		id: 6,
-		titulo: "Pantalón beige",
+		id: 21,
+		titulo: "Pantalón NIKE",
 		precio: 2700,
 		imagen: "./assets/img/p1.jpg",
 		seccion: {
@@ -59,8 +61,8 @@ const productos = [
 		},
 	},
 	{
-		id: 7,
-		titulo: "Pantalón blanco",
+		id: 22,
+		titulo: "Pantalón beige",
 		precio: 2500,
 		imagen: "./assets/img/p2.jpg",
 		seccion: {
@@ -69,8 +71,8 @@ const productos = [
 		},
 	},
 	{
-		id: 8,
-		titulo: "Pantalón negro",
+		id: 23,
+		titulo: "Pantalón blanco",
 		precio: 2500,
 		imagen: "./assets/img/p3.jpg",
 		seccion: {
@@ -79,7 +81,7 @@ const productos = [
 		},
 	},
 	{
-		id: 9,
+		id: 24,
 		titulo: "Jean negro",
 		precio: 3200,
 		imagen: "./assets/img/p4.jpg",
@@ -89,8 +91,8 @@ const productos = [
 		},
 	},
 	{
-		id: 10,
-		titulo: "Pantalón de vestir",
+		id: 25,
+		titulo: "Pantalón cargo",
 		precio: 3500,
 		imagen: "./assets/img/p5.jpg",
 		seccion: {
@@ -99,7 +101,48 @@ const productos = [
 		},
 	},
 	{
-		id: 11,
+		id: 26,
+		titulo: "Jean beige",
+		precio: 3600,
+		imagen: "./assets/img/p6.jpg",
+		seccion: {
+			nombre: "Pantalones",
+			id: "pantalones",
+		},
+	},
+	{
+		id: 27,
+		titulo: "Pantalón FILA",
+		precio: 3900,
+		imagen: "./assets/img/p7.jpg",
+		seccion: {
+			nombre: "Pantalones",
+			id: "pantalones",
+		},
+	},
+	{
+		id: 28,
+		titulo: "Pantalón CAT",
+		precio: 4000,
+		imagen: "./assets/img/p8.jpg",
+		seccion: {
+			nombre: "Pantalones",
+			id: "pantalones",
+		},
+	},
+	{
+		id: 29,
+		titulo: "Pantalón NIKE",
+		precio: 3800,
+		imagen: "./assets/img/p9.jpg",
+		seccion: {
+			nombre: "Pantalones",
+			id: "pantalones",
+		},
+	},
+	//remeras
+	{
+		id: 41,
 		titulo: "Remera azul",
 		precio: 2000,
 		imagen: "./assets/img/r1.jpg",
@@ -109,7 +152,7 @@ const productos = [
 		},
 	},
 	{
-		id: 12,
+		id: 42,
 		titulo: "Remera TROPIC blanca",
 		precio: 2700,
 		imagen: "./assets/img/r2.jpg",
@@ -119,7 +162,7 @@ const productos = [
 		},
 	},
 	{
-		id: 13,
+		id: 43,
 		titulo: "Remera GROUND blanc",
 		precio: 2700,
 		imagen: "./assets/img/r3.jpg",
@@ -129,7 +172,7 @@ const productos = [
 		},
 	},
 	{
-		id: 14,
+		id: 44,
 		titulo: "Remera roja",
 		precio: 2000,
 		imagen: "./assets/img/r4.jpg",
@@ -139,7 +182,7 @@ const productos = [
 		},
 	},
 	{
-		id: 15,
+		id: 45,
 		titulo: "Remera marron",
 		precio: 2000,
 		imagen: "./assets/img/r5.jpg",
@@ -149,7 +192,7 @@ const productos = [
 		},
 	},
 	{
-		id: 16,
+		id: 46,
 		titulo: "Remera roja",
 		precio: 2000,
 		imagen: "./assets/img/r6.jpg",
@@ -159,7 +202,7 @@ const productos = [
 		},
 	},
 	{
-		id: 17,
+		id: 47,
 		titulo: "Remera azul",
 		precio: 2000,
 		imagen: "./assets/img/r7.jpg",
@@ -169,7 +212,7 @@ const productos = [
 		},
 	},
 	{
-		id: 18,
+		id: 48,
 		titulo: "Remera celeste",
 		precio: 2000,
 		imagen: "./assets/img/r8.jpg",
@@ -178,8 +221,9 @@ const productos = [
 			id: "remeras",
 		},
 	},
+	//shorts
 	{
-		id: 19,
+		id: 61,
 		titulo: "Short hojas",
 		precio: 2400,
 		imagen: "./assets/img/s1.jpg",
@@ -189,7 +233,7 @@ const productos = [
 		},
 	},
 	{
-		id: 20,
+		id: 62,
 		titulo: "Short flores",
 		precio: 2500,
 		imagen: "./assets/img/s2.jpg",
@@ -199,7 +243,7 @@ const productos = [
 		},
 	},
 	{
-		id: 21,
+		id: 63,
 		titulo: "Short palmeras",
 		precio: 2800,
 		imagen: "./assets/img/s3.jpg",
@@ -209,7 +253,7 @@ const productos = [
 		},
 	},
 	{
-		id: 22,
+		id: 64,
 		titulo: "Short plantas",
 		precio: 2500,
 		imagen: "./assets/img/s4.jpg",
@@ -219,7 +263,7 @@ const productos = [
 		},
 	},
 	{
-		id: 23,
+		id: 65,
 		titulo: "Short florecer azul",
 		precio: 2200,
 		imagen: "./assets/img/s5.jpg",
@@ -229,7 +273,7 @@ const productos = [
 		},
 	},
 	{
-		id: 24,
+		id: 66,
 		titulo: "Short florecer rojo",
 		precio: 2200,
 		imagen: "./assets/img/s6.jpg",
@@ -239,7 +283,7 @@ const productos = [
 		},
 	},
 	{
-		id: 25,
+		id: 67,
 		titulo: "Short tucán",
 		precio: 2900,
 		imagen: "./assets/img/s7.jpg",
