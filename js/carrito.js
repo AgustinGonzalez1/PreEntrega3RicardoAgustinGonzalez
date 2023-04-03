@@ -67,6 +67,30 @@ function actualizarBotonesEliminar() {
 }
 
 function eliminarDelCarrito(e) {
+	//Eliminar del carrito
+	Toastify({
+		text: "Producto eliminado!",
+		duration: 3000,
+		destination: "",
+		newWindow: false,
+		close: true,
+		gravity: "top", // `top` or `bottom`
+		position: "right", // `left`, `center` or `right`
+		offset: {
+			x: 0, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+			y: 80, // vertical axis - can be a number or a string indicating unity. eg: '2em'
+		},
+		stopOnFocus: true, // Prevents dismissing of toast on hover
+		style: {
+			background: "#17234d",
+			color: "#959dff",
+			borderRadius: "5px",
+			boxShadow: "0px 5px 18px 5px rgba(0, 0, 0, 0.75)",
+		},
+		onClick: function () {}, // Callback after click
+	}).showToast();
+
+	//Resto del código
 	const idBoton = parseFloat(e.currentTarget.id);
 
 	const index = productosEnCarrito.findIndex((producto) => producto.id === idBoton);
@@ -93,6 +117,22 @@ function actualizarTotal() {
 botonComprar.addEventListener("click", comprarCarrito);
 
 function comprarCarrito() {
+	//Vaciar carrito
+	Swal.fire({
+		icon: "success",
+		titleText: "Su compra ha sido realizada con éxito",
+		showConfirmButton: true,
+		iconColor: "#916aff",
+		backdrop: true,
+		color: "#916aff",
+		background: "#272727",
+		confirmButtonText: "Aceptar",
+		confirmButtonColor: "black",
+		buttonsStyling: false,
+		width: "650px",
+	});
+
+	//Resto del código
 	productosEnCarrito.length = 0;
 	localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 
