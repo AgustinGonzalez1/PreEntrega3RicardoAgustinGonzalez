@@ -125,7 +125,7 @@ function comprarCarrito() {
 		iconColor: "#916aff",
 		backdrop: true,
 		color: "#916aff",
-		background: "#272727",
+		background: "#17234d",
 		confirmButtonText: "Aceptar",
 		confirmButtonColor: "black",
 		buttonsStyling: false,

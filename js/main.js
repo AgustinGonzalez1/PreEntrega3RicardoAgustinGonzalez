@@ -511,7 +511,7 @@ function cargarProductos(productosElegidos) {
             <div class="detalles">
                 <h3 class="producto-titulo">${producto.titulo}</h3>
                 <p class="producto-precio">$${producto.precio}</p>
-                <button class="producto-agregar" id="${producto.id}">Agregar</button>
+                <button class="producto-agregar" id="${producto.id}"><span class="span1"></span>Agregar<span class="span2"</span></button>
             </div>
         `;
 
