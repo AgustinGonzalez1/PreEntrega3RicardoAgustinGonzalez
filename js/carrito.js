@@ -40,20 +40,19 @@ function cargarProductosCarrito() {
               <h3>Subtotal</h3>
               <p>$${producto.precio * producto.cantidad}</p>
             </div>
-            <button class="carrito-producto-eliminar" id:"${producto.id}"><i class="fa-solid fa-x"></i></button>
+            <button class="carrito-producto-eliminar" id="${producto.id}"><i class="fa-solid fa-x"></i></button>
       `;
 
 			contenedorCarritoProductos.append(div);
 		});
+		actualizarBotonesEliminar();
+		actualizarTotal();
 	} else {
 		contenedorCarritoVacio.classList.remove("displayNone");
 		contenedorCarritoProductos.classList.add("displayNone");
 		contenedorCarritoAcciones.classList.add("displayNone");
 		contenedorCarritoComprado.classList.add("displayNone");
 	}
-
-	actualizarBotonesEliminar();
-	actualizarTotal();
 }
 
 cargarProductosCarrito();

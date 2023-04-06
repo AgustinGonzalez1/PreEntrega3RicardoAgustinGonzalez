@@ -278,7 +278,7 @@ a {
 /* body carrito */
 .body-carrito {
 	display: grid;
-	grid-template-columns: 350px repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 80px auto auto auto;
 	grid-template-areas:
 		"nav    nav    nav    nav"
@@ -411,6 +411,60 @@ a {
 	margin-right: 20px;
 	align-items: center;
 }
+
+/* boton vaciar y comprar */
+.btn {
+	width: 130px;
+	height: 40px;
+	color: #fff;
+	font-weight: bold;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	background-color: none;
+	padding: 0;
+	border: none;
+	z-index: 2;
+	border: var(--clr-main) solid 2px;
+	color: var(--clr-main);
+}
+.btn .span1 {
+	position: absolute;
+	width: 0px;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: var(--clr-main);
+	z-index: -1;
+	transition: 0.3s;
+}
+
+.btn:hover .span1 {
+	width: 50%;
+}
+
+.btn:hover {
+	color: var(--clr-pink);
+}
+
+.btn .span2 {
+	position: absolute;
+	width: 0px;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+	background-color: var(--clr-main);
+	z-index: -1;
+	transition: 0.3s;
+}
+
+.btn:hover .span2 {
+	width: 50%;
+}
+/* boton vaciar y comprar */
 /* vaciar y comprar */
 
 /* desabilitar objetos */
@@ -528,54 +582,16 @@ footer > p {
 }
 /* footer */
 
-.btn {
-	width: 130px;
-	height: 40px;
-	color: #fff;
-	font-weight: bold;
-	background: transparent;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	position: relative;
-	display: inline-block;
-	outline: none;
-	background-color: none;
-	padding: 0;
-	border: none;
-	z-index: 2;
-	border: var(--clr-main) solid 2px;
-	color: var(--clr-main);
+/* clima */
+.body-clima {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 80px auto auto auto;
+	grid-template-areas:
+		"nav    nav    nav    nav"
+		"main   main   main   main"
+		"main   main   main   main"
+		"footer footer footer footer";
+	background-color: var(--clr-pink);
 }
-.btn .span1 {
-	position: absolute;
-	width: 0px;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	background-color: var(--clr-main);
-	z-index: -1;
-	transition: 0.3s;
-}
-
-.btn:hover .span1 {
-	width: 50%;
-}
-
-.btn:hover {
-	color: var(--clr-pink);
-}
-
-.btn .span2 {
-	position: absolute;
-	width: 0px;
-	height: 100%;
-	top: 0px;
-	right: 0px;
-	background-color: var(--clr-main);
-	z-index: -1;
-	transition: 0.3s;
-}
-
-.btn:hover .span2 {
-	width: 50%;
-}
+/* clima */
