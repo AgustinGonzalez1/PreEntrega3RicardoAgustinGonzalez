@@ -586,12 +586,48 @@ footer > p {
 .body-clima {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 80px auto auto auto;
+	grid-template-rows: 80px 100px 700px auto;
 	grid-template-areas:
 		"nav    nav    nav    nav"
-		"main   main   main   main"
+		"aside  aside  aside  aside"
 		"main   main   main   main"
 		"footer footer footer footer";
 	background-color: var(--clr-pink);
+}
+
+.aside-clima {
+	grid-area: aside;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-clima {
+	grid-area: main;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+.contenido-clima {
+	background-color: var(--clr-main);
+	border-radius: 5px;
+	padding: 20px;
+	color: var(--clr-pink);
+}
+
+.obtener-clima {
+	display: flex;
+	flex-direction: column;
+}
+
+.obtener-clima > select {
+	margin: 10px 0px;
+}
+
+.alerta {
+	margin-top: 10px;
 }
 /* clima */

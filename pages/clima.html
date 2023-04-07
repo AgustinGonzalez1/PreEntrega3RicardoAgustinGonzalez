@@ -27,15 +27,61 @@
     </div>
     <div class="div-carrito">
       <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
-      <div class="contenedor-contador">
-        <span id="contador">0</span>
-      </div>
     </div>
   </nav>
+  <aside class="aside-clima">
+    <h1>Consulte el clima en su zona</h1>
+  </aside>
+  <main class="main-clima">
+    <section class="contenido-clima">
 
+      <div class="resultado">
+        <p id="ocultarLuego" class="">Agregue ciudad y pais</p>
+        <div id="contenido">
 
+        </div>
+      </div>
+      <form action="" method="POST" class="obtener-clima">
+        <select name="" id="paises" required>
+          <option class="option" value="" selected disabled>Seleccione su país</option>
+          <option class="option" value="AR">Argentina</option>
+          <option class="option" value="CO">Colombia</option>
+          <option class="option" value="CR">Costa Rica</option>
+          <option class="option" value="ES">España</option>
+          <option class="option" value="US">Estados Unidos</option>
+          <option class="option" value="MX">Mexico</option>
+          <option class="option" value="PE">Perú</option>
+        </select>
+        <select name="" id="ciudad" required>
+          <option class="option" value="" selected disable>Seleccione su provincia</option>
+          <option class="option" id="provincia1"></option>
+          <option class="option" id="provincia2"></option>
+          <option class="option" id="provincia3"></option>
+          <option class="option" id="provincia4"></option>
+          <option class="option" id="provincia5"></option>
+        </select>
+        <input type="submit" value="Consultar clima">
+        <p id="mostrar-ocultar" class="alerta"></p>
+      </form>
+    </section>
+  </main>
 
-  <script src="../js/main.js"></script>
+  <footer>
+    <p>Copyright © 2023 - Desarrollado por Agustin Gonzalez</p>
+    <div class='flx'>
+      <a class="redSocial red-in" href="https://www.linkedin.com/in/ricardoagustingonzalez/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a class="redSocial red-gh" href="https://github.com/AgustinGonzalez1" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a class="redSocial red-ig" href="https://www.instagram.com/cementoooo/?next=%2F" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="../js/clima.js"></script>
 </body>
 
 </html>
