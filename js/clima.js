@@ -48,6 +48,7 @@ function mostrarClima(data1) {
 		name,
 		main: { temp, temp_min, temp_max },
 		weather: [arr],
+		sys: { country },
 	} = data1;
 	const contenido = document.querySelector("#contenido");
 
@@ -56,7 +57,7 @@ function mostrarClima(data1) {
 	const max = kelvinACentigrados(temp_max);
 
 	contenido.innerHTML = `
-  <h5>Clima en ${name}</h5>
+  <h5>Clima en ${name}, ${country}</h5>
   <img src="https://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="${arr.main}">
   <h2>${actual}°C</h2>
   <p>Min: ${min}°C</p>
@@ -74,7 +75,7 @@ function traerProvincias(value) {
 			provincia1.innerText = `Buenos Aires`;
 			provincia2.innerText = `Córdoba`;
 			provincia3.innerText = `Santa Fe`;
-			provincia4.innerText = `Jujuy`;
+			provincia4.innerText = `San Salvador de Jujuy`;
 			provincia5.innerText = `Neuquén`;
 			break;
 		case "ES":
@@ -85,9 +86,9 @@ function traerProvincias(value) {
 			provincia5.innerText = `Málaga`;
 			break;
 		case "CO":
-			provincia1.innerText = `Bogotá D.C`;
+			provincia1.innerText = `Bogotá`;
 			provincia2.innerText = `Antioquia`;
-			provincia3.innerText = `Valle del Cauca`;
+			provincia3.innerText = `Amazonas`;
 			provincia4.innerText = `Atlántico`;
 			provincia5.innerText = `Santander`;
 			break;
@@ -102,7 +103,7 @@ function traerProvincias(value) {
 			provincia1.innerText = `California`;
 			provincia2.innerText = `Texas`;
 			provincia3.innerText = `Florida`;
-			provincia4.innerText = `Nueva York (New York)`;
+			provincia4.innerText = `New York`;
 			provincia5.innerText = `Illinois`;
 			break;
 		case "MX":
