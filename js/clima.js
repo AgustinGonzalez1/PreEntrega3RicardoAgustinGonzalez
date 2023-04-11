@@ -1,6 +1,6 @@
 const resultado = document.querySelector(".resultado");
 const form = document.querySelector(".obtener-clima");
-const nombreCiudad = document.querySelector("#ciudad");
+let nombreCiudad = document.querySelector("#ciudad");
 const nombrePais = document.querySelector("#paises");
 const mostrarOcultar = document.querySelector("#mostrar-ocultar");
 const ocultarLuego = document.querySelector("#ocultarLuego");
@@ -18,6 +18,8 @@ form.addEventListener("submit", (e) => {
 
 	ocultarLuego.classList.add("displayNone");
 	callApi(nombreCiudad.value, nombrePais.value);
+	form.reset();
+	nombreCiudad.innerHTML = `<option class="option" value="" selected disabled>Seleccione su provincia</option>`;
 });
 
 function error(mensaje) {
@@ -69,56 +71,36 @@ function kelvinACentigrados(temp) {
 	return parseInt(temp - 273.15);
 }
 
+const ar = ["Buenos Aires", "Córdoba", "Santa Fe", "San Salvador de Jujuy", "Neuquén"];
+const co = ["Bogotá", "Barcelona", "Amazonas", "Atlántico", "Santander"];
+const es = ["Madrid", "Córdoba", "Valencia", "Sevilla", "Málaga"];
+const cr = ["San José", "Limón", "Heredia", "Guanacaste", "Alajuela"];
+const us = ["California", "Texas", "Florida", "New York", "Illinois"];
+const mx = ["Ciudad de México", "Nuevo León", "Jalisco", "Puebla", "Guerrero"];
+const pe = ["Lima", "Arequipa", "Cusco", "Trujillo", "Chiclayo"];
+
 function traerProvincias(value) {
 	switch (value) {
 		case "AR":
-			provincia1.innerText = `Buenos Aires`;
-			provincia2.innerText = `Córdoba`;
-			provincia3.innerText = `Santa Fe`;
-			provincia4.innerText = `San Salvador de Jujuy`;
-			provincia5.innerText = `Neuquén`;
-			break;
-		case "ES":
-			provincia1.innerText = `Madrid`;
-			provincia2.innerText = `Barcelona`;
-			provincia3.innerText = `Valencia`;
-			provincia4.innerText = `Sevilla`;
-			provincia5.innerText = `Málaga`;
+			recorrerPais(ar);
 			break;
 		case "CO":
-			provincia1.innerText = `Bogotá`;
-			provincia2.innerText = `Antioquia`;
-			provincia3.innerText = `Amazonas`;
-			provincia4.innerText = `Atlántico`;
-			provincia5.innerText = `Santander`;
+			recorrerPais(co);
+			break;
+		case "ES":
+			recorrerPais(es);
 			break;
 		case "CR":
-			provincia1.innerText = `San José`;
-			provincia2.innerText = `Limón`;
-			provincia3.innerText = `Heredia`;
-			provincia4.innerText = `Guanacaste`;
-			provincia5.innerText = `Alajuela`;
+			recorrerPais(cr);
 			break;
 		case "US":
-			provincia1.innerText = `California`;
-			provincia2.innerText = `Texas`;
-			provincia3.innerText = `Florida`;
-			provincia4.innerText = `New York`;
-			provincia5.innerText = `Illinois`;
+			recorrerPais(us);
 			break;
 		case "MX":
-			provincia1.innerText = `Ciudad de México`;
-			provincia2.innerText = `Nuevo León`;
-			provincia3.innerText = `Jalisco`;
-			provincia4.innerText = `Puebla`;
-			provincia5.innerText = `Guerrero`;
+			recorrerPais(mx);
 			break;
 		case "PE":
-			provincia1.innerText = `Lima`;
-			provincia2.innerText = `Arequipa`;
-			provincia3.innerText = `Cusco`;
-			provincia4.innerText = `Trujillo`;
-			provincia5.innerText = `Chiclayo`;
+			recorrerPais(pe);
 			break;
 	}
 }
@@ -126,3 +108,11 @@ function traerProvincias(value) {
 nombrePais.addEventListener("change", (e) => {
 	traerProvincias(e.target.value);
 });
+
+function recorrerPais(pais) {
+	if (nombreCiudad.value === "") {
+		pais.forEach((prov) => (nombreCiudad.innerHTML += `<option class="option">${prov}</option>`));
+	} else {
+		nombreCiudad.innerHTML = "";
+	}
+}
