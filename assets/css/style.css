@@ -206,6 +206,7 @@ a {
 .main-tienda > .contenedor-carrito-tienda > .producto > img {
 	width: 100%;
 	height: 250px;
+	object-fit: cover;
 }
 
 .main-tienda > .contenedor-carrito-tienda > .producto > .detalles {
@@ -675,3 +676,77 @@ small {
 	flex-direction: column;
 }
 /* clima */
+
+@media (max-width: 919px) {
+	.body-tienda {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 80px 60px auto auto;
+		grid-template-areas:
+			"nav    nav    nav    nav"
+			"boton  boton  boton  boton"
+			"main   main   main   main"
+			"footer footer footer footer";
+		background-color: var(--clr-pink);
+	}
+	.aside-tienda {
+		position: absolute;
+		top: -300px;
+		width: 100vw;
+		justify-content: center;
+		height: fit-content;
+		overflow: hidden;
+		transition: 0.5s;
+		z-index: 9;
+	}
+	.main-tienda {
+		z-index: 8;
+	}
+	.navbar {
+		z-index: 11;
+	}
+	footer {
+		z-index: 1;
+	}
+	.aside-tienda > .div-botones {
+		position: relative;
+		margin-top: 0px;
+		height: fit-content;
+		z-index: 9;
+	}
+	.aside-tienda > .div-botones > ul {
+		padding: 0px;
+		position: static;
+		margin: 10px 0px;
+	}
+	.aside-tienda > .div-botones > ul > li > .boton {
+		border-radius: 5px;
+	}
+	.main-tienda > .contenedor-carrito-tienda {
+		z-index: 2;
+	}
+	.main-tienda > .contenedor-carrito-tienda > .producto {
+		width: 200px;
+		height: 305px;
+	}
+
+	/*  */
+	.boton-nav {
+		grid-area: boton;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--clr-main);
+		border-top: white solid 1px;
+		z-index: 10;
+	}
+	.boton-nav > .mostrar-nav {
+		background-color: transparent;
+		width: 50px;
+		height: 40px;
+	}
+	.height {
+		top: 140px;
+	}
+	/*  */
+}
