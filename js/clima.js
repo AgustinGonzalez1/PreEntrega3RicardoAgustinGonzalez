@@ -62,18 +62,20 @@ function mostrarClima(data1) {
   <h5>Clima en ${name}, ${country}</h5>
   <img src="https://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="${arr.main}">
   <h2>${actual}°C</h2>
-  <p>Min: ${min}°C</p>
-  <P>Max: ${max}°C</P>
+  <div class="flex">
+  <small>Min: ${min}°C</small>
+  <small>Max: ${max}°C</small>
+  </div>
   `;
 }
 
 function kelvinACentigrados(temp) {
-	return parseInt(temp - 273.15);
+	return Math.ceil(parseFloat(temp - 273.15));
 }
 
 const ar = ["Buenos Aires", "Córdoba", "Santa Fe", "San Salvador de Jujuy", "Neuquén"];
-const co = ["Bogotá", "Barcelona", "Amazonas", "Atlántico", "Santander"];
-const es = ["Madrid", "Córdoba", "Valencia", "Sevilla", "Málaga"];
+const co = ["Bogotá", "Bolívar", "Amazonas", "Atlántico", "Santander"];
+const es = ["Madrid", "Barcelona", "Valencia", "Sevilla", "Málaga"];
 const cr = ["San José", "Limón", "Heredia", "Guanacaste", "Alajuela"];
 const us = ["California", "Texas", "Florida", "New York", "Illinois"];
 const mx = ["Ciudad de México", "Nuevo León", "Jalisco", "Puebla", "Guerrero"];
@@ -106,6 +108,7 @@ function traerProvincias(value) {
 }
 
 nombrePais.addEventListener("change", (e) => {
+	nombreCiudad.innerHTML = `<option class="option" value="" selected disabled>Seleccione su país</option>`;
 	traerProvincias(e.target.value);
 });
 

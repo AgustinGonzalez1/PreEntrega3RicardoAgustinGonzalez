@@ -35,14 +35,13 @@
   <main class="main-clima">
     <section class="contenido-clima">
 
-      <div class="resultado">
-        <p id="ocultarLuego" class="">Agregue ciudad y pais</p>
-        <div id="contenido">
-
-        </div>
+      <p id="ocultarLuego" class="">Agregue ciudad y pais</p>
+      <div id="contenido" class="contenido">
       </div>
+    </section>
+    <section class="section-opciones">
       <form action="" method="POST" class="obtener-clima">
-        <select class="option" name="" id="paises" required>
+        <select class="options" name="" id="paises" required>
           <option class="option" value="" selected disabled>Seleccione su país</option>
           <option class="option" value="AR">Argentina</option>
           <option class="option" value="CO">Colombia</option>
@@ -52,10 +51,10 @@
           <option class="option" value="MX">Mexico</option>
           <option class="option" value="PE">Perú</option>
         </select>
-        <select class="option" name="" id="ciudad" required>
+        <select class="options" name="" id="ciudad" required>
           <option class="option" value="" selected disabled>Seleccione su provincia</option>
         </select>
-        <input type="submit" value="Consultar clima">
+        <input type="submit" value="Consultar clima" class="input-enviar">
         <p id="mostrar-ocultar" class="alerta"></p>
       </form>
     </section>

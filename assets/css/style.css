@@ -612,22 +612,66 @@ footer > p {
 }
 
 .contenido-clima {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: var(--clr-main);
 	border-radius: 5px;
-	padding: 20px;
+	padding: 20px 10px;
 	color: var(--clr-pink);
+	width: 300px;
+	height: 250px;
+}
+
+.temperatura {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contenido {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.contenido > img {
+	width: 100px;
 }
 
 .obtener-clima {
 	display: flex;
 	flex-direction: column;
+	width: 200px;
 }
 
-.obtener-clima > select {
+.contenido .obtener-clima > select {
 	margin: 10px 0px;
 }
 
-.alerta {
-	margin-top: 10px;
+.section-opciones {
+	margin-top: 20px;
+	width: 300px;
+	display: flex;
+	justify-content: center;
+}
+
+.options {
+	margin: 5px 0px;
+}
+
+.input-enviar {
+	margin: 5px 0px;
+}
+
+small {
+	margin: 3px 0px;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
 }
 /* clima */
