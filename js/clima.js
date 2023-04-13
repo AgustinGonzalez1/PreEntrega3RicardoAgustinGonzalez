@@ -65,12 +65,32 @@ function mostrarClima(data1) {
 		contenido.innerHTML = `
     <h5>Clima en ${name}, ${country}</h5>
     <img src="https://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="${arr.main}">
-    <h2>${actual}°C</h2>
+    <h2 id="tempAct" class="">${actual}°C</h2>
     <div class="flex">
-    <small>Min: ${min}°C</small>
-    <small>Max: ${max}°C</small>
+    <small id="tempMin" class="">Min: ${min}°C</small>
+    <small id="tempMax" class="">Max: ${max}°C</small>
     </div>
     `;
+		const tempAct = document.querySelector("#tempAct");
+		if (actual <= 15) {
+			tempAct.classList.add("menorA15");
+		} else {
+			tempAct.classList.add("mayorA16");
+		}
+
+		const tempMin = document.querySelector("#tempMin");
+		if (min <= 15) {
+			tempMin.classList.add("menorA15");
+		} else {
+			tempMin.classList.add("mayorA16");
+		}
+
+		const tempMax = document.querySelector("#tempMax");
+		if (max <= 15) {
+			tempMax.classList.add("menorA15");
+		} else {
+			tempMax.classList.add("mayorA16");
+		}
 		contenido.classList.remove("center");
 	}, 3000);
 }

@@ -17,7 +17,7 @@ a {
 	--clr-main: #17234d;
 	--clr-light: #916aff;
 	--clr-pink: #959dff;
-	--clr-dark: #272727;
+	--clr-dark: #632763;
 }
 /* root */
 
@@ -315,6 +315,13 @@ a {
 
 .contenedor-carrito {
 	width: 800px;
+	margin: 0px 10px;
+}
+
+@media (max-width: 820px) {
+	.contenedor-carrito {
+		width: 95%;
+	}
 }
 
 .main-carrito > .contenedor-carrito > #carrito-vacio {
@@ -327,6 +334,8 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 .carrito-productos > .carrito-producto {
@@ -353,6 +362,9 @@ a {
 .carrito-producto-precio,
 .carrito-producto-subtotal {
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .carrito-producto-eliminar {
@@ -368,6 +380,30 @@ a {
 .carrito-producto-eliminar:hover {
 	background-color: var(--clr-pink);
 	color: var(--clr-dark);
+}
+
+@media (max-width: 820px) {
+	.carrito-productos > .carrito-producto {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 5px;
+		place-items: center;
+	}
+	.carrito-producto-eliminar {
+		width: 45px;
+		height: 45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5px;
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 400px) {
+	.carrito-producto-nombre {
+		width: auto;
+	}
 }
 
 #carrito-vacio {
@@ -601,7 +637,7 @@ footer > p {
 	grid-area: aside;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: end;
 }
 
 .main-clima {
@@ -620,9 +656,9 @@ footer > p {
 	background-color: var(--clr-main);
 	border-radius: 5px 5px 0px 0px;
 	padding: 20px 10px;
-	color: var(--clr-pink);
 	width: 300px;
 	height: 250px;
+	color: var(--clr-pink);
 }
 
 .temperatura {
@@ -640,6 +676,7 @@ footer > p {
 }
 .center {
 	justify-content: center;
+	font-size: 30px;
 }
 
 .contenido > img {
@@ -673,10 +710,7 @@ footer > p {
 	border: var(--clr-light) 1px solid;
 	color: white;
 	width: 100%;
-}
-
-.input-enviar {
-	margin: 5px 0px;
+	height: 25px;
 }
 
 small {
@@ -691,7 +725,7 @@ small {
 /* boton clima */
 .input-enviar {
 	width: 100%;
-	height: 30px;
+	height: 35px;
 	margin: 10px 0px;
 	color: #fff;
 	font-weight: bold;
@@ -875,4 +909,11 @@ small {
 		height: 25px;
 		width: 80px;
 	}
+}
+.menorA15 {
+	color: lightblue;
+}
+
+.mayorA16 {
+	color: orangered;
 }
