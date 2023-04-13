@@ -4,6 +4,7 @@ let nombreCiudad = document.querySelector("#ciudad");
 const nombrePais = document.querySelector("#paises");
 const mostrarOcultar = document.querySelector("#mostrar-ocultar");
 const ocultarLuego = document.querySelector("#ocultarLuego");
+const contenidoClima = document.querySelector(".contenido-clima");
 
 /* input provincias */
 const provincia1 = document.querySelector("#provincia1");
@@ -57,16 +58,21 @@ function mostrarClima(data1) {
 	const actual = kelvinACentigrados(temp);
 	const min = kelvinACentigrados(temp_min);
 	const max = kelvinACentigrados(temp_max);
+	contenido.classList.add("center");
+	contenido.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i>`;
 
-	contenido.innerHTML = `
-  <h5>Clima en ${name}, ${country}</h5>
-  <img src="https://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="${arr.main}">
-  <h2>${actual}°C</h2>
-  <div class="flex">
-  <small>Min: ${min}°C</small>
-  <small>Max: ${max}°C</small>
-  </div>
-  `;
+	setTimeout(() => {
+		contenido.innerHTML = `
+    <h5>Clima en ${name}, ${country}</h5>
+    <img src="https://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="${arr.main}">
+    <h2>${actual}°C</h2>
+    <div class="flex">
+    <small>Min: ${min}°C</small>
+    <small>Max: ${max}°C</small>
+    </div>
+    `;
+		contenido.classList.remove("center");
+	}, 3000);
 }
 
 function kelvinACentigrados(temp) {
@@ -108,7 +114,7 @@ function traerProvincias(value) {
 }
 
 nombrePais.addEventListener("change", (e) => {
-	nombreCiudad.innerHTML = `<option class="option" value="" selected disabled>Seleccione su país</option>`;
+	nombreCiudad.innerHTML = `<option class="option" value="" selected disabled>Seleccione su provincia</option>`;
 	traerProvincias(e.target.value);
 });
 
