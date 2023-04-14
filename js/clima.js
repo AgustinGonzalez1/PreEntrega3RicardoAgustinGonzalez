@@ -72,25 +72,14 @@ function mostrarClima(data1) {
     </div>
     `;
 		const tempAct = document.querySelector("#tempAct");
-		if (actual <= 15) {
-			tempAct.classList.add("menorA15");
-		} else {
-			tempAct.classList.add("mayorA16");
-		}
+		cambiarColor(actual, tempAct);
 
 		const tempMin = document.querySelector("#tempMin");
-		if (min <= 15) {
-			tempMin.classList.add("menorA15");
-		} else {
-			tempMin.classList.add("mayorA16");
-		}
+		cambiarColor(min, tempMin);
 
 		const tempMax = document.querySelector("#tempMax");
-		if (max <= 15) {
-			tempMax.classList.add("menorA15");
-		} else {
-			tempMax.classList.add("mayorA16");
-		}
+		cambiarColor(max, tempMax);
+
 		contenido.classList.remove("center");
 	}, 3000);
 }
@@ -143,5 +132,47 @@ function recorrerPais(pais) {
 		pais.forEach((prov) => (nombreCiudad.innerHTML += `<option class="option">${prov}</option>`));
 	} else {
 		nombreCiudad.innerHTML = "";
+	}
+}
+
+function cambiarColor(tipo, destino) {
+	if (tipo <= 10) {
+		destino.classList.add("menorA10");
+	} else if (tipo >= 11 && tipo <= 12) {
+		destino.classList.add("entre11y12");
+	} else if (tipo >= 13 && tipo <= 14) {
+		destino.classList.add("entre13y14");
+	} else if (tipo >= 15 && tipo <= 16) {
+		destino.classList.add("entre15y16");
+	} else if (tipo >= 17 && tipo <= 18) {
+		destino.classList.add("entre17y18");
+	} else if (tipo >= 19 && tipo <= 20) {
+		destino.classList.add("entre19y20");
+	} else if (tipo >= 21 && tipo <= 22) {
+		destino.classList.add("entre21y22");
+	} else if (tipo >= 23 && tipo <= 24) {
+		destino.classList.add("entre23y24");
+	} else if (tipo >= 25 && tipo <= 26) {
+		destino.classList.add("entre25y26");
+	} else if (tipo >= 27 && tipo <= 28) {
+		destino.classList.add("entre27y28");
+	} else if (tipo >= 29 && tipo <= 30) {
+		destino.classList.add("entre29y30");
+	} else if (tipo >= 31 && tipo <= 32) {
+		destino.classList.add("entre31y32");
+	} else if (tipo >= 33 && tipo <= 34) {
+		destino.classList.add("entre33y34");
+	} else if (tipo >= 35 && tipo <= 36) {
+		destino.classList.add("entre35y36");
+	} else if (tipo >= 37 && tipo <= 38) {
+		destino.classList.add("entre37y38");
+	} else if (tipo >= 39 && tipo <= 40) {
+		destino.classList.add("entre39y40");
+	} else if (tipo >= 41 && tipo <= 42) {
+		destino.classList.add("entre41y42");
+	} else if (tipo >= 43 && tipo <= 44) {
+		destino.classList.add("entre43y44");
+	} else {
+		destino.classList.add("mayorA45");
 	}
 }

@@ -429,13 +429,15 @@ a {
 
 .carrito-borrar {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	align-items: end;
 }
 
 .carrito-comprar {
 	display: flex;
+	flex-direction: column;
 	font-weight: bold;
+	justify-content: center;
+	align-items: center;
 }
 
 #carrito-comprado {
@@ -446,7 +448,6 @@ a {
 
 .total {
 	display: flex;
-	margin-right: 20px;
 	align-items: center;
 }
 
@@ -910,10 +911,81 @@ small {
 		width: 80px;
 	}
 }
-.menorA15 {
-	color: lightblue;
+
+/* colores de temperatura */
+.menorA10 {
+	color: #adffff;
 }
 
-.mayorA16 {
-	color: orangered;
+.entre11y12 {
+	color: #d2ffff;
 }
+
+.entre13y14 {
+	color: #89fcb0;
+}
+
+.entre15y16 {
+	color: #9fff7c;
+}
+
+.entre17y18 {
+	color: #ddff6d;
+}
+
+.entre19y20 {
+	color: #f9ff85;
+}
+
+.entre21y22 {
+	color: #fff39b;
+}
+
+.entre23y24 {
+	color: #ffd64b;
+}
+
+.entre25y26 {
+	color: #ffb951;
+}
+
+.entre27y28 {
+	color: #ff9744;
+}
+
+.entre29y30 {
+	color: #ff7219;
+}
+
+.entre31y32 {
+	color: #ff4a0c;
+}
+
+.entre33y34 {
+	color: #ff2301;
+}
+
+.entre35y36 {
+	color: #fc0000;
+}
+
+.entre37y38 {
+	color: #ca0001;
+}
+
+.entre39y40 {
+	color: #9a0000;
+}
+
+.entre41y42 {
+	color: #660000;
+}
+
+.entre43y44 {
+	color: #330002;
+}
+
+.mayorA45 {
+	color: #010000;
+}
+/* colores de temperatura */
